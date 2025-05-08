@@ -1,0 +1,66 @@
+{
+  "id": "tariels-tower-ftt",
+  "name": "tariels-tower-ftt",
+  "title": "tariels-tower-ftt",
+  "description": "<p>Tariel’s Tower for Export</p>\n <br/><div style=\"border: 1px solid #eee;border-left-width: .25rem;border-left-color: #f0ad4e;border-radius: .25rem;padding: 10px;\">\n        <h5 style=\"margin:0px;\">Shared Compendium</h5>\n        <p style=\"margin-bottom:0px;\">This module allows you to share compendiums between your worlds.</p>\n        <p style=\"margin-bottom:0px;\">It cannot be auto-updated, therefore it cannot overwrite your compendiums and is therefore <strong>safe to unlock</strong>.</p></div>",
+  "version": "1.0",
+  "manifest": "https://github.com/asmoben/tariels-tower-ftt/releases/latest/download/module.json",
+  "download": "https://github.com/asmoben/tariels-tower-ftt/releases/download/1.0.0/module.zip",
+  "minimumCoreVersion": "0.6.0",
+  "compatibleCoreVersion": "11",
+  "compatibility": {
+    "minimum": "0.6.0",
+    "verified": "11"
+  },
+  "author": "Ben Vale",
+  "authors": [
+    {
+      "name": "Ben Vale"
+    }
+  ],
+  "packs": [
+    {
+      "name": "actor-1-monsters",
+      "label": "Monsters (Shared)",
+      "path": "packs/actor-1-monsters.db",
+      "entity": "Actor",
+      "type": "Actor",
+      "package": "forge-vtt-shared-compendiums-tariels-tower"
+    },
+    {
+      "name": "journalentry-1-journal-entries",
+      "label": "Journal Entries (Shared)",
+      "path": "packs/journalentry-1-journal-entries.db",
+      "entity": "JournalEntry",
+      "type": "JournalEntry",
+      "package": "forge-vtt-shared-compendiums-tariels-tower"
+    },
+    {
+      "name": "scene-1-scenes",
+      "label": "Scenes (Shared)",
+      "path": "packs/scene-1-scenes.db",
+      "entity": "Scene",
+      "type": "Scene",
+      "package": "forge-vtt-shared-compendiums-tariels-tower"
+    }
+  ],
+  "packFolders": [
+    {
+      "name": "Tariels Tower",
+      "sorting": "m",
+      "color": "#3f8230",
+      "packs": [
+        "actor-1-monsters",
+        "journalentry-1-journal-entries",
+        "scene-1-scenes"
+      ]
+    }
+  ],
+  "relationships": {
+    "systems": [
+      {
+        "id": "dnd5e"
+      }
+    ]
+  }
+}
